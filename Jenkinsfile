@@ -20,9 +20,8 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    docker.image('christian/node-webapp').inside {
                     sh 'docker run -d -p 3000:3000 christian/node-webapp'
-    }
+    
     }
     }
     }
